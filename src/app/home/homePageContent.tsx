@@ -6,7 +6,7 @@ export default function HomePageContent({
   buttonTitle = "Comece agora gratuitamente",
 }) {
   return (
-    <main className="flex flex-col items-center gap-10 px-[2px] overflow-y-auto pb-[5vh]">
+    <main className="flex flex-col gap-[48px] pt-[2.5vh] items-center   overflow-y-auto pb-[5vh] bg-backgroundClaro">
       <div className="ml-[3rem]">
         <h1 className="text-4xl font-bold">{title}</h1>
         <h2 className="text-xl font-bold">{description}</h2>
@@ -15,11 +15,11 @@ export default function HomePageContent({
       <button className="border border-black text-xl font-bold rounded-xl w-[320px] h-[58px]">
         {buttonTitle}
       </button>
-      <div className="relative w-full h-[400px] flex items-center justify-center ">
+      <div className="relative w-full h-[400px] flex items-center justify-center border-none">
         {/*blur */}
-        <div className="absolute inset-0 bg-primaryGreen/50 backdrop-blur-md z-0" />
+        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-backgroundClaro via-primaryGreen/60 to-backgroundClaro" />
         {/* Gradient fade */}
-        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-white/80 via-transparent to-white/80 " />
+        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-backgroundClaro via-transparent to-transparent" />
         <div className=" relative h-[85%] w-[85%] z-20 mx-auto rounded-[12px]">
           <Image
             src="/images/graph_landing_page.jpg"
