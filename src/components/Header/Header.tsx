@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = () => {
         </div>
         <Link
           href="/LoginPage"
-          className="px-2 py-1 font-bold text-black border-primaryGreen border-3 w-26 rounded-xl text-md"
+          className="px-2 py-1 text-black border-primaryGreen border-3 w-26 rounded-xl font-[500] text-center"
         >
           Entrar
         </Link>
