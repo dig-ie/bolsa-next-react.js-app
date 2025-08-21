@@ -1,5 +1,5 @@
-import Header from "@/app/components/Header";
-import MainContent from "./components/MainContent";
+import Header from "@/components/Header";
+import MainContent from "../components/MainContent";
 
 export default function HomePage() {
   return (
