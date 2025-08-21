@@ -1,37 +1,38 @@
-import React from 'react';
-import Header from '../components/Header';
+import React from "react";
+import Header from "../../components/Header/Header";
 
-type MainPageProps = {
-    title?: string;
-    description?: string;
-    buttonTitle?: string;
-};
+//FIXME: Removido do componente page.tsx por motivos de build
 
-const MainPage: React.FC<MainPageProps> = ({
-    title = "Invista sem medo. Aprenda simulando de verdade.",
-    description = "Simule operações na bolsa com dados reais e sem riscos.",
-    buttonTitle = "Comece agora gratuitamente",
-}) => {
-    return (
-        //declarar o header
-        <main>
-            <Header />
+// type MainPageProps = {
+//   title?: string;
+//   description?: string;
+//   buttonTitle?: string;
+// };
 
-            <div className="flex flex-col items-center gap-10 p-10">
-                <div>
-                    <h1 className="text-4xl font-bold">{title}</h1>
-                </div>
+const MainPage: React.FC = ({}) => {
+  return (
+    <main>
+      <Header />
 
-                <div>
-                    <h2 className="text-xl font-bold">{description}</h2>
-                </div>
+      <div className="flex flex-col items-center gap-10 p-10">
+        <div>
+          <h1 className="text-4xl font-bold">
+            Invista sem medo. Aprenda simulando de verdade.
+          </h1>
+        </div>
 
-                <button className="border border-black text-xl font-bold rounded-xl w-[320px] h-[58px]">
-                    {buttonTitle}
-                </button>
-            </div>
-        </main>
-    );
+        <div>
+          <h2 className="text-xl font-bold">
+            Simule operações na bolsa com dados reais e sem riscos.
+          </h2>
+        </div>
+
+        <button className="border border-black text-xl font-bold rounded-xl w-[320px] h-[58px]">
+          Comece agora gratuitamente
+        </button>
+      </div>
+    </main>
+  );
 };
 
 export default MainPage;
