@@ -1,13 +1,44 @@
-// MainDashboard.tsx
-import React from "react";
-import BalanceCard from "./components/BalanceCard";
-import GraphCard from "./components/GraphCard";
+
+"use client";
+
+import React, { useState } from "react";
+import PeriodButton from "@/components/PeriodButton";
+import GraphCard from "@/components/GraphCard";
+import BalanceCard from "@/components/BalanceCard";
 
 export default function MainDashboard() {
+    const [selectedPeriod, setSelectedPeriod] = useState("Anual");
+
+    const periods = ["Diário", "Semanal", "Mensal", "Anual"];
+
+    const graphs = [
+        { title: "Diário", image: "/images/graph_switch.png" },
+        { title: "Semanal", image: "/images/graph_switch.png" },
+        { title: "Mensal", image: "/images/graph_switch.png" },
+        { title: "Anual", image: "/images/graph_switch.png" },
+    ];
+
+    const selectedGraph = graphs.find((graph) => graph.title === selectedPeriod);
+
     return (
         <div>
+
             <BalanceCard balance="R$50.000" futureBalance="R$1500.00" />
-            <GraphCard teste="teste" />
+
+            <div className="flex justify-center mb-4 space-x-4">
+                {periods.map((period) => (
+                    <PeriodButton
+                        key={period}
+                        label={period}
+                        selected={period === selectedPeriod}
+                        onClick={() => setSelectedPeriod(period)}
+                    />
+                ))}
+            </div>
+
+            {selectedGraph && (
+                <GraphCard title={selectedGraph.title} image={selectedGraph.image} />
+            )}
         </div>
     );
 }
