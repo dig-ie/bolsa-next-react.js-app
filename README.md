@@ -31,6 +31,7 @@ Simulador educacional e visual de mercado financeiro, com cotações fictícias 
 - **Maria Giulia Martins** — Designer UX/UI
 - **Arthur Vinícius** — Frontend Next.js
 - **Pablo Santos** — Frontend Next.js
+- **Luiz Fernando Alves** - Frontend Next.js
 - **Brenno Felipe** — Backend Java/Spring
 - **Camilo Ariel** — Backend Java/Spring
 
