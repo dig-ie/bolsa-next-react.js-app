@@ -3,8 +3,8 @@
 
 import React, { useState } from "react";
 import PeriodButton from "@/components/PeriodButton";
-import GraphCard from "@/components/GraphCard";
-import BalanceCard from "@/components/BalanceCard";
+import GraphCard from "@/components/GraphCards/GraphCard";
+import BalanceCard from "@/components/BalanceCard/BalanceCard";
 
 export default function MainDashboard() {
     const [selectedPeriod, setSelectedPeriod] = useState("Anual");
