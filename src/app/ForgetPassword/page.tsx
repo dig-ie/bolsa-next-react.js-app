@@ -12,7 +12,7 @@ export default function ForgetPassword() {
         </div>
         <div className="bg-white rounded-t-4xl py-25 flex flex-col gap-5">
           <Text h1="" h2="Esqueceu a Senha?" p="Digite seu e-mail para que possamos te enviar um acesso para fazer uma nova senha." />
-          <div className="ml-4">
+          <div className="flex flex-col items-center justify-center">
           <Form label="E-mail" placeholder="usuário123@gmail.com" />
           </div>
           <div  className="flex flex-col items-center justify-center">
