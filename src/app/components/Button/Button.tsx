@@ -13,4 +13,4 @@ const Button: React.FC <ButtonProps> = ({title, href}) => {
     )
 }
 
-export default Button
+export default Button;
