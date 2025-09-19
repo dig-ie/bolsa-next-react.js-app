@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
-import PeriodButton from "@/components/PeriodButton";
+import PeriodButton from "@/components/PeriodButton/PeriodButton";
 import GraphCard from "@/components/GraphCards/GraphCard";
 import BalanceCard from "@/components/BalanceCard/BalanceCard";
 
