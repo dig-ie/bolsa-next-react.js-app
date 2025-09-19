@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import PeriodButton from "@/components/PeriodButton/PeriodButton";
 import GraphCard from "@/components/GraphCards/GraphCard";
 import BalanceCard from "@/components/BalanceCard/BalanceCard";
+import Footer from "@/components/Layout/Footer";
 
 export default function MainDashboard() {
     const [selectedPeriod, setSelectedPeriod] = useState("Anual");
@@ -39,6 +40,13 @@ export default function MainDashboard() {
             {selectedGraph && (
                 <GraphCard title={selectedGraph.title} image={selectedGraph.image} />
             )}
+            <Footer />
+
         </div>
+
+
+
+
     );
+
 }
