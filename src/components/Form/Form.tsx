@@ -1,5 +1,5 @@
 import React from "react";
-import { FormProps } from "../Form/FormProps";
+import { FormProps } from "./FormProps";
 
 const Form: React.FC<FormProps> = ({ label, placeholder }) => {
   return (

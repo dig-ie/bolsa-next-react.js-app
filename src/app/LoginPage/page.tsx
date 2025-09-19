@@ -1,8 +1,8 @@
-import Button from "../components/Button/Button";
-import Form from "../components/Form/Form";
-import Text from "../components/Text/Text";
-import Link from "../components/CustomLink/CustomLink";
-import Submit from "../components/Submit/Submit";
+import Button from "../../components/Button/Button";
+import Form from "../../components/Form/Form";
+import Text from "../../components/Text/Text";
+import Link from "../../components/CustomLink/CustomLink";
+import Submit from "../../components/Submit/Submit";
 // import BackButton from "../components/BackButton/BackButton";
 
 export default function Home() {

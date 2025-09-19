@@ -1,5 +1,5 @@
 import React from "react";
-import { BackButtonProps } from "../BackButton/BackButtonProps";
+import { BackButtonProps } from "./BackButtonProps";
 import Link from "next/link";
 import {FaArrowLeft} from "react-icons/fa"
 //FIXME: add into the dependencies "react-icons/fa" and test the yarn build before commiting

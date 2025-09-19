@@ -1,7 +1,7 @@
-import Text from "../components/Text/Text";
-import Form from "../components/Form/Form";
-import Submit from "../components/Submit/Submit";
-import BackButton from "../components/BackButton/BackButton";
+import Text from "../../components/Text/Text";
+import Form from "../../components/Form/Form";
+import Submit from "../../components/Submit/Submit";
+import BackButton from "../../components/BackButton/BackButton";
 
 export default function ForgetPassword() {
   return (

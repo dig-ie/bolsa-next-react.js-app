@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { CustomLinkProps } from "../CustomLink/CustomLinkProps";
+import { CustomLinkProps } from "./CustomLinkProps";
 
 const CustomLink: React.FC<CustomLinkProps> = ({ text }) => {
   return (
