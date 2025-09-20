@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { CustomLinkProps } from "./CustomLinkProps";
+import { CustomLinkProps } from "../CustomLink/CustomLinkProps";
 
 const CustomLink: React.FC<CustomLinkProps> = ({ text }) => {
   return (
@@ -14,3 +14,4 @@ const CustomLink: React.FC<CustomLinkProps> = ({ text }) => {
 };
 
 export default CustomLink;
+//por algum motivo apareceu alteração da mudança dos componetes de app para src
