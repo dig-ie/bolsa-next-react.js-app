@@ -6,7 +6,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({ text }) => {
   return (
     <Link
       className="text-customBlue font-bold text-[15px] sm:text-[16px] md:text-[18px] mt-3 flex flex-col items-center justify-center mr-40 text-[#225991]"
-      href="./ForgetPassword"
+      href="/ForgetPassword"
     >
       {text}
     </Link>
@@ -14,3 +14,4 @@ const CustomLink: React.FC<CustomLinkProps> = ({ text }) => {
 };
 
 export default CustomLink;
+//por algum motivo apareceu alteração da mudança dos componetes de app para src
