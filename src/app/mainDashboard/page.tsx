@@ -39,6 +39,12 @@ export default function MainDashboard() {
             {selectedGraph && (
                 <GraphCard title={selectedGraph.title} image={selectedGraph.image} />
             )}
+
         </div>
+
+
+
+
     );
+
 }
