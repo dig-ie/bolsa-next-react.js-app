@@ -12,6 +12,8 @@ Simulador educacional e visual de mercado financeiro, com cotações fictícias 
 - Chart.js
 - Axios
 
+### ⚙️🗄️Link para o código (repositório Github) do back-end:
+https://github.com/dig-ie/bolsa-Node.js-NestJS-api
 ---
 
 ## 🧩 Funcionalidades
