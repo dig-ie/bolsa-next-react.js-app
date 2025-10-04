@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import PeriodButton from "@/components/PeriodButton/PeriodButton";
 import GraphCard from "@/components/GraphCards/GraphCard";
 import BalanceCard from "@/components/BalanceCard/BalanceCard";
+import ActionsFavorites from "@/components/ActionsFavorites";
 
 export default function MainDashboard() {
     const [selectedPeriod, setSelectedPeriod] = useState("Anual");
@@ -19,10 +20,8 @@ export default function MainDashboard() {
     ];
 
     const selectedGraph = graphs.find((graph) => graph.title === selectedPeriod);
-
     return (
         <div>
-
             <BalanceCard balance="R$50.000" futureBalance="R$1500.00" />
 
             <div className="flex justify-center mb-4 space-x-4">
@@ -39,7 +38,7 @@ export default function MainDashboard() {
             {selectedGraph && (
                 <GraphCard title={selectedGraph.title} image={selectedGraph.image} />
             )}
-
+            <ActionsFavorites />
         </div>
 
 
