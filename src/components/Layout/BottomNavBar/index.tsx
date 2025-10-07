@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     const pathname = usePathname();
 
     return (
-        <footer className="bg-[#2ECC71] w-full p-2 ">
+        <div className="bg-[#2ECC71] w-full p-2 ">
             <div>
                 <div className="flex flex-row items-center justify-around ">
                     {FooterIcons.map((i, index) => (
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                     ))}
                 </div>
             </div>
-        </footer>
+        </div>
     )
 }
 

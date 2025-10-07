@@ -19,6 +19,14 @@ export default function MainDashboard() {
         { title: "Anual", image: "/images/graph_switch.png" },
     ];
 
+
+    const ActionsFavoritesMocks = [
+        { actionName: "PETR4", actionValue: "+1,22%" },
+        { actionName: "VALE3", actionValue: "-0,75%" },
+        { actionName: "ITUB4", actionValue: "+0,65%" },
+    ];
+
+
     const selectedGraph = graphs.find((graph) => graph.title === selectedPeriod);
     return (
         <div>
@@ -38,7 +46,7 @@ export default function MainDashboard() {
             {selectedGraph && (
                 <GraphCard title={selectedGraph.title} image={selectedGraph.image} />
             )}
-            <ActionsFavorites />
+            <ActionsFavorites actions={ActionsFavoritesMocks} />
         </div>
 
 
