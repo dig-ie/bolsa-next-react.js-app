@@ -14,4 +14,4 @@ const Submit: React.FC <SubmitProps> =
     )
 }
 
-export default Submit
+export default Submit;

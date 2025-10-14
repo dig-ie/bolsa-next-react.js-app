@@ -12,4 +12,4 @@ const Text: React.FC <TextProps> = ({h1, h2, p}) => {
 }
 
 
-export default Text
+export default Text;
