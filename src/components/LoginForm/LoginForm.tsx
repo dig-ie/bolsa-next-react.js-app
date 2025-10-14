@@ -3,11 +3,11 @@ import { LoginFormProps } from "./LoginFormprops";
 
 const LoginForm: React.FC<LoginFormProps> = ({ onlyEmail = false }) => {
   return (
-    <form  className="w- flex flex-col items-center gap-4">
-      <div className="w-[320px] flex flex-col ">
+    <form  className="flex flex-col items-center gap-4">
+      <div className="flex flex-col">
         <label
           htmlFor="email"
-          className="font-medium mb-2 text-base sm:text-lg md:text-xl lg:text-2xl text-left"
+          className="font-medium mb-2 text-base sm:text-lg md:text-xl lg:text-xl text-left lg:mb-1"
         >
           Email
         </label>
@@ -15,15 +15,15 @@ const LoginForm: React.FC<LoginFormProps> = ({ onlyEmail = false }) => {
           id="email"
           type="email"
           placeholder="Digite seu email"
-          className="px-4 py-2 rounded-2xl border border-textClaro bg-backgroundClaro text-sm mt-2 w-full max-w-xs"
+          className="px-4 py-2 rounded-2xl border border-textClaro bg-backgroundClaro text-sm mt-2 w-[320px] lg:w-[360px] max-w-md lg:mt-1 lg:rounded-[9px]"
           autoComplete="email"
         />
       </div>
       {!onlyEmail && (
-      <div className="w-[320px] flex flex-col">
+      <div className="flex flex-col">
         <label
           htmlFor="senha"
-          className="font-medium mb-2 text-base sm:text-lg md:text-xl lg:text-2xl text-left"
+          className="font-medium mb-2 text-base sm:text-lg md:text-xl lg:text-xl text-left lg:mb-1"
         >
           Senha
         </label>
@@ -31,7 +31,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onlyEmail = false }) => {
           id="senha"
           type="password"
           placeholder="Digite sua senha"
-          className="px-4 py-2 rounded-2xl border border-textClaro bg-backgroundClaro text-sm mt-2 w-full max-w-xs"
+          className="px-4 py-2 rounded-2xl border border-textClaro bg-backgroundClaro text-sm mt-2 w-[320px] lg:w-[360px] max-w-md lg:mt-1 lg:rounded-[9px]"
           autoComplete="current-password"
         />
       </div>
