@@ -2,10 +2,10 @@ import React from "react";
 import { SubmitProps } from "./SubmitProps";
 
 const Submit: React.FC <SubmitProps> =
-({title, href}) => {
+({title, href, className}) => {
     return (
-        <a href={href}>
-        <button className="w-[320px] h-[58px] border rounded-xl bg-secondaryColor mt-6 cursor-pointer">
+        <a href={href} className="h-px">
+        <button className={className}>
             <h1 className="font-bold text-white">
             {title}
             </h1>
